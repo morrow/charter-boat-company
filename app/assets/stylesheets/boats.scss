@@ -14,12 +14,13 @@
     display:inline-block;
   }
   .image {
-    width:39%;
+    width:35%;
     padding:6px;
     border:1px solid #ccc;
     background:#eee;
   }
   .description {
+    text-align:justify;
     width:55%;
     line-height:1.5em;
     padding:0 1em;

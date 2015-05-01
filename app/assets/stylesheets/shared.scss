@@ -10,7 +10,8 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family:'bebas';
+  font-family:'bebas', helvetica, arial, sans-serif;
+  text-transform:uppercase;
 }
 
 h1 {
@@ -28,7 +29,8 @@ a {
 }
 
 header {
-  font-family:'bebas';
+  font-family:'bebas', helvetica, arial, sans-serif;
+  text-transform:uppercase;
   text-align: center;
   .logo {
     font-size:2em;
@@ -156,22 +158,29 @@ main {
 
 
 footer{
+  width:100%;
   font-size:0.8em;
-  padding:1em;
+  padding:0.75em;
   font-family:'droid serif';
+  font-family:'droid sans';
   font-weight:normal;
   background:linear-gradient(to bottom, #151515, #000);
   color:#e5e3e6;
+  a {
+    text-decoration:underline;
+  }
   copyright {
     display:block;
     font-size:1.1em;
     margin:3em 1.5em 0.5em 1.5em;
   }
   .contact, .social, nav {
+    vertical-align:top;
     min-width:200px;
     display:inline-block;
     margin:0 2em;
     padding:0 2em;
+    height:110px;
     border-left: 1px dotted #444;
     > * {
       display:block;
@@ -182,9 +191,10 @@ footer{
     border-left:none !important;
   }
   nav a {
-    font-size:1.25em;
+
   }
   .facebook a, .twitter a {
+    text-decoration:none;
     font-family:'droid sans';
     display:inline-block;
     padding:0.25em;

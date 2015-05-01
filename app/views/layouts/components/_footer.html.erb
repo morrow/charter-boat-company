@@ -13,14 +13,8 @@
     <div class='twitter'>Follow us on <%= link_to "Twitter", "https://twitter.com/SundownerFleet", :target => :blank %></div>
   </div>
   <nav class='legal'>
-    <% %w(about terms privacy).each do |link| %>
-      <%= link_to link, "#{link}" %>
-    <% end %>
+    <copyright>Copyright © <%= Time.now.year %> Sundowner Charters</copyright>
+    <%= link_to 'Privacy Policy', '/legal/policy' %>
+    <%= link_to 'Terms and Conditions', '/legal/terms' %>
   </nav>
-  <nav class='reports'>
-    <%= link_to "Fishing Report", "http://www.noreast.com/usermanager/userprofile.cfm?user_ID=56289", :target => :blank %>
-    <%= link_to "Local Weather Forecast", "http://www.weatherforyou.com/reports/index.php?forecast=zandh&pands=11957&url_place=orient&state=ny&zipcode=11957", :target => :blank %>
-    <%= link_to "Marine Weather Forecast", "http://forecast.weather.gov/MapClick.php?lat=41.16521551363405&lon=-72.2186279296875&site=okx&smap=1&unit=0&lg=en&FcstType=marine", :target => :blank %>
-  </nav>
-  <copyright>© Copyright <%= Time.now.year %> Sundowner Charters</copyright>
 </footer>
