@@ -1,0 +1,27 @@
+// Place all the styles related to the boats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.boat {
+  margin:3em 0;
+  font-size:0.8em;
+  .name {
+    font-size:2em;
+    font-family:'bebas neue';
+    font-weight:bold;
+  }
+  .image, .description {
+    vertical-align:top;
+    display:inline-block;
+  }
+  .image {
+    width:39%;
+    padding:6px;
+    border:1px solid #ccc;
+    background:#eee;
+  }
+  .description {
+    width:55%;
+    line-height:1.5em;
+    padding:0 1em;
+  }
+}

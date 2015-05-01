@@ -1,0 +1,13 @@
+<header>
+  <%= image_tag "/boat_logo_cropped.png", :class => :hero %>
+  <%= link_to "/", :class => :logo do %>
+    <h1>Sundowner Charters</h1>
+  <% end %>
+  <h2 id='tagline'>Sailing the Waters of Long Island's East End since 1982</h2>
+  <nav>
+    <% %w(boats crew rates info directions contact).each do |link| %>
+      <%= link_to link, "/#{link}", :class => [link, ('current' if current_class?(link))] %>
+    <% end %>
+    <%= link_to 'Book Your Trip', '/bookings', :class => 'book' %>
+  </nav>
+</header>

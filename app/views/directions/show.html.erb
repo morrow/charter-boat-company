@@ -1,0 +1,22 @@
+<h1>Directions</h1>
+Sundowner Charters sets sail from:
+<div class='marina'>
+  <div class='name'>Orient By The Sea Marina</div>
+  <div class='address'>40200 Main Rd, Orient, NY 11957</div>
+  <div class='address-note'>1000 feet West of the Orient Point Ferry</div>
+  <%= link_to "orientbythesea.com", "http://orientbythesea.com", :target => :blank %>
+</div>
+<div class='directions-from-495E'>
+  <div class='title'>From Long Island Expressway (495E)</div>
+  Drive to the last exit of the LIE (73) and merge onto Old County Road.
+  In about 1 mile, turn left onto Mill Road and continue North onto Osborn Ave. In 1.4 miles, turn right onto Sound Ave. Continue East on Sound Ave (turns into North Road) for approximately 30 miles and Orient by the Sea will be on the right, just past the Orient Beach State Park.
+</div>
+<div class='directions-from-orient-point'>
+  <div class='title'>From Orient Point Ferry</div>
+  Start going west from the Cross Sound Ferry, drive about 1/4 and turn left into Orient by the Sea Marina’s parking lot.
+</div>
+<div class='google-maps-directions'><%= link_to 'Google Maps Directions', 'https://www.google.com/maps/dir//Orient+by+the+Sea+Marina+%26+Restaurant/@41.153714,-72.244279,15z', :class => 'button', :target => :blank %></div>
+<br />
+<iframe id='google-maps' width="100%" height="600" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Orient%20by%20the%20Sea%20Marina%20&key=AIzaSyC3kt1Bv_HB5xRUJd5Yyd8Lz7tONc3yXZ8"></iframe>
+<%= image_tag '/orient_by_the_sea_aerial.jpg' %>
+<%= image_tag '/orient_by_the_sea_marina.jpg' %>

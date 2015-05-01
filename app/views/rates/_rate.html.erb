@@ -1,0 +1,48 @@
+<div class='rate-group'>
+  <div class='title'>
+    <div class='boat-name'><%= link_to rate.boat.name, rate.boat %></div>
+    <div class='boat-passengers'>(<%= rate.boat.passengers %> passengers maximum)</div>
+  </div>
+  <figure class='boat-image'><%= image_tag rate.boat.image %><figcaption><%= rate.boat.length%>' <%= rate.boat.name %> - holds 1 - <%= rate.boat.passengers %> passengers.</figcaption></figure>
+  <div class='full-day-inshore rate'>
+    <div class='service'>
+      <div class='service-name'>Full Day Inshore</div>
+      <div class='service-duration'>(7-8 hrs)</div>
+      <div class='service-departure-time'>Departs between 6AM & 7AM</div>
+    </div>
+    <div class='price'>
+      <span class='price-value'><%= rate.full_day %></span><% if rate.full_day_pax %> first 6 passengers <% end %>
+      <% if rate.full_day_pax %>
+        <div class='pax-price'><span class='pax-price-value'><%= rate.full_day_pax %></span> each additional passenger</div>
+      <% end %>
+    </div>
+  </div>
+  <div class='half-day-inshore rate'>
+    <div class='service'>
+      <div class='service-name'>Half Day Inshore, am or pm</div>
+      <div class='service-duration'>(4 hrs)</div>
+      <div class='service-departure-time'>AM trip departs between 6AM & 7AM</div>
+    </div>
+    <div class='price'>
+      <span class='price-value'><%= rate.half_day %></span><% if rate.half_day_pax %> first 6 passengers <% end %>
+      <% if rate.half_day_pax %>
+        <div class='pax-price'>
+          <span class='pax-price-value'><%= rate.half_day_pax %></span> each additional passenger
+        </div>
+        <% end %>
+      </div>
+  </div>
+  <div class='night-fishing rate'>
+    <div class='service'>
+      <div class='service-name'>Night Striped Bass</div>
+      <div class='service-duration'>(5-6 hrs)</div>
+      <div class='service-departure-time'>Departs between 5PM & 6PM</div>
+    </div>
+    <div class='price'>
+      <span class='price-value'><%= rate.night %></span><% if rate.night_pax %> first 6 passengers <% end %>
+      <% if rate.night_pax %>
+        <div class='pax-price'><span class='pax-price-value'><%= rate.night_pax %></span> each additional passenger</div>
+      <% end %>
+    </div>
+  </div>
+</div>

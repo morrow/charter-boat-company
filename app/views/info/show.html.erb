@@ -1,0 +1,6 @@
+<h1>Recipes</h1>
+<div id='recipes'>
+  <% ['blackfish', 'striped bass', 'fluke', 'porgy', 'sea bass', 'bluefish', 'cod', 'weakfish', 'flounder', 'other'].each do |link| %>
+    <%= link_to "#{link.capitalize} recipes", "##{link}" %><br />
+  <% end %>
+</div>

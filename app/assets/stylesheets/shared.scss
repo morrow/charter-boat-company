@@ -1,0 +1,220 @@
+html {
+  height:100%;
+  background:#ddd radial-gradient(ellipse at center, rgba(255,255,255,1) 40%, rgba(246,246,246,1) 80%, rgba(237,237,237,1) 100%) no-repeat center center fixed;
+  background-size:cover;
+}
+
+body {
+  font-family:'droid sans';
+  text-align:center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:'bebas neue';
+}
+
+h1 {
+  font-size:250%;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+#wrap {
+  width:1150px;
+  margin:2em auto;
+}
+
+header {
+  font-family:'bebas neue';
+  text-align: center;
+  .logo {
+    font-size:2em;
+    font-weight:bold;
+    display:inline-block;
+    &:hover {
+      color:#09f;
+    }
+  }
+  #tagline {
+    font-size:1.75em;
+    font-family:'droid serif';
+    font-style:italic;
+    color:#222;
+  }
+  img.hero {
+    margin:0 auto;
+    display:block;
+    position:relative;
+    left:-35px;
+    height:145px;
+  }
+  nav  {
+    margin:1em;
+    padding:1em 1em 0.5em 1em;
+    border-top:3px solid #eee;
+    border-bottom:3px solid #eee;
+    a {
+      font-size:1.6em;
+      margin-left:1.5em;
+      padding:0.25em 0.4em 0 0.25em;
+      border-radius:3px;
+
+      &:hover {
+        background:#ccc;
+      }
+      &.current {
+        background:#09f;
+        color:white;
+      }
+      &:first-child {
+        margin-left:0;
+      }
+      &:before {
+        display: inline-block;
+        font-family:'pictos';
+        font-weight:normal !important;
+        color:black;
+        position:relative;
+        left:-0.5em;
+        padding-left:0.5em;
+        top:-0.2em;
+        font-size:0.8em;
+        opacity:0.85;
+      }
+      &.current:before {
+        color:white;
+      }
+      &:hover:before, &.current:before {
+        opacity:1;
+      }
+      &.boats:before {
+        content:'a';
+      }
+      &.crew:before {
+        content:'U';
+      }
+      &.rates:before {
+        content:'%';
+      }
+      &.info:before {
+        content:'i';
+      }
+      &.directions:before {
+        content:'G';
+      }
+      &.contact:before {
+        content:'w';
+      }
+      &.availability:before {
+        content:'\\';
+      }
+      &.book {
+        background:linear-gradient(to bottom, rgb(100,220,100), rgb(50,170,50));
+        color:white;
+        border-radius:3px;
+        border:1px solid rgb(30,150,30);
+        &:hover {
+          color:black;
+        }
+      }
+      &.book:before {
+        content:'\\';
+        color:white;
+        opacity:1;
+      }
+    }
+  }
+}
+
+main {
+  background:white;
+  border:0.2em solid #eee;
+  min-height:225px;
+  font-size:1.5em;
+  font-family:'droid serif';
+  text-align:left;
+  padding:1.75em 1.5em;
+  h1 {
+    border-bottom:0.1em solid #333;
+    margin-bottom:0.75em;
+    .breadcrumb {
+      &:after {
+        content:'/';
+        color:#999;
+        margin-left:0.1em;
+        margin-right:0.1em;
+      }
+    }
+  }
+  img {
+    max-width:100%;
+  }
+}
+
+
+footer{
+  font-size:0.8em;
+  padding:1em;
+  font-family:'droid serif';
+  font-weight:normal;
+  background:linear-gradient(to bottom, #151515, #000);
+  color:#e5e3e6;
+  copyright {
+    display:block;
+    font-size:1.1em;
+    margin:3em 1.5em 0.5em 1.5em;
+  }
+  .contact, .social, nav {
+    min-width:200px;
+    display:inline-block;
+    margin:0 2em;
+    padding:0 2em;
+    border-left: 1px dotted #444;
+    > * {
+      display:block;
+      margin:1em;
+    }
+  }
+  .contact {
+    border-left:none !important;
+  }
+  nav a {
+    font-size:1.25em;
+  }
+  .facebook a, .twitter a {
+    font-family:'droid sans';
+    display:inline-block;
+    padding:0.25em;
+  	border-radius: 3px;
+  }
+  .facebook a {
+    background: #4661b0;
+  }
+  .twitter a {
+    background: #0084B4;
+  }
+}
+
+form {
+  * {
+    font-family:'droid sans';
+    font-size:1em;
+  }
+  .field {
+    display:block;
+    margin:1em;
+  }
+  .field > label {
+    vertical-align:top;
+  }
+  input {
+    min-width: 300px;
+  }
+  textarea {
+    min-width:600px;
+    min-height:300px;
+  }
+}

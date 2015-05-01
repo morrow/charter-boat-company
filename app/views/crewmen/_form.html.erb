@@ -1,0 +1,19 @@
+<%= form_for @crewman, :html => { :multipart => true } do |f| %>
+
+  <div class='field'>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :bio %>
+    <%= f.text_area :bio %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

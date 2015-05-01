@@ -1,0 +1,22 @@
+// Place all the styles related to the Admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html.admin {
+  #admin-toolbar {
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    background:linear-gradient(to bottom, #ccc, #aaa);
+    border-right:0.5em solid rgba(0,0,0,0.5);
+    padding:1em;
+    z-index:100;
+    width:7em;
+    font-weight:bold;
+    font-size:1.5em;
+    &.edit {
+      background:linear-gradient(to bottom, orangered, orange);
+    }
+  }
+  padding-left:12em;
+}

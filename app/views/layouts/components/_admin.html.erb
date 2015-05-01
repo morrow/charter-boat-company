@@ -1,0 +1,9 @@
+<div id='admin-toolbar' class="<%= ('edit' if action_name=='edit') %>">
+  Admin Panel
+  <button onclick="window.location.href=window.location.href.replace('admin.', '')">Return to regular site</button>
+  <% if action_name == 'edit' %>
+    <button onclick="window.location.pathname=window.location.pathname.slice(0, -5);">Read Mode</button>
+  <% else %>
+    <button onclick="window.location.pathname+='/edit'">Edit Mode</button>
+  <% end %>
+</div>

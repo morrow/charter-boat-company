@@ -1,0 +1,86 @@
+// Place all the styles related to the info controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+main.info {
+  font-size:1em;
+  line-height:1.5em;
+  .jump-links {
+    margin-top:0;
+    margin-bottom:3em;
+    text-align:center;
+    a {
+      display:inline-block;
+      font-family:'droid sans';
+      padding:0.5em;
+      margin:1em;
+      background:#eee;
+      border:1px solid #ccc;
+      &:hover {
+        background:#eee;
+      }
+    }
+  }
+  > div {
+    margin:2em 1em;
+    padding-top:2em;
+  }
+  ul, dl, p {
+    margin:1em;
+  }
+  li {
+    margin:0.5em;
+  }
+  h2 {
+    font-size:2em;
+    border-bottom:0.1em solid black;
+  }
+  dl dd {
+    margin-left:1.5em;
+  }
+  dl dt {
+    display:inline-block;
+    text-transform:capitalize;
+    font-weight:bold;
+    margin:1.25em 0 0 0;
+    font-family:'droid sans';
+    font-size:1.25em;
+    &:first-child {
+      margin-top:0.25em;
+    }
+  }
+  #important-information {
+
+  }
+  #what-to-bring {
+    dl {
+      dt {
+        color:rgb(50,200,50);
+        &:before {
+          font-family:'pictos';
+          content:'2';
+          color:green;
+          margin-right:0.25em;
+        }
+      }
+    }
+  }
+  #what-not-to-bring {
+    dl {
+      dt {
+        color:rgb(200,50,50);
+        &:before {
+          font-family:'pictos';
+          content:'*';
+          color:red;
+          margin-right:0.25em;
+        }
+      }
+    }
+  }
+  #preparing-your-catch {
+    a {
+      background:#eee;
+      padding:0.25em;
+    }
+  }
+}

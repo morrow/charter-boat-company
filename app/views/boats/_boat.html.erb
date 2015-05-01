@@ -1,0 +1,6 @@
+<div class='boat'>
+  <div class='name '><%= link_to boat.name, boat %></div>
+  <div class='image'><%= image_tag boat.image %></div>
+  <div class='description'><%= boat.description %>  The <%= boat.name %> is licensed to carry <%= boat.passengers %> passengers.</div>
+  <!-- <%= link_to "Book the #{boat.name}", "/bookings/sundowner-ii", :class => :button %> -->
+</div>

@@ -1,0 +1,39 @@
+// Place all the styles related to the crew controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.crewman {
+  margin: 2em 1em;
+  min-height:425px;
+  .name {
+    font-weight:bold;
+    font-size:1.25em;
+    margin-bottom:0.25em;
+    padding-bottom:0.25em;
+    border-bottom:2px solid #000;
+  }
+  .image, .bio {
+    vertical-align:top;
+    display:inline-block;
+  }
+  .image {
+    text-align:right;
+    width:40%;
+    height:400px;
+    float:right;
+    img {
+      max-width:100%;
+      max-height:100%;
+      padding:6px;
+      background:#eee;
+      border:1px solid #ccc;
+    }
+  }
+  .bio {
+    width:55%;
+    font-size:0.8em;
+    white-space:pre-line;
+    text-align:justify;
+    padding:0;
+    line-height:1.5em;
+  }
+}

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start: 2015-04-29 15:11:30
+  end: 2015-04-29 15:11:30
+  active: false
+  boat_id: 
+  full_day: 1.5
+  half_day: 1.5
+  night: 1.5
+  full_day_pax: 1.5
+  half_day_pax: 1.5
+  night_pax: 1.5
+  discount: 1.5
+
+two:
+  start: 2015-04-29 15:11:30
+  end: 2015-04-29 15:11:30
+  active: false
+  boat_id: 
+  full_day: 1.5
+  half_day: 1.5
+  night: 1.5
+  full_day_pax: 1.5
+  half_day_pax: 1.5
+  night_pax: 1.5
+  discount: 1.5

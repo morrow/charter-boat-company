@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class='admin'>
+  <head>
+    <title>Admin Sundowner Charters</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id='wrap'>
+      <%= render 'layouts/components/header' %>
+      <main><%= yield %></main>
+    </div>
+    <%= render 'layouts/components/footer' %>
+    <%= render 'layouts/components/admin' %>
+  </body>
+</html>

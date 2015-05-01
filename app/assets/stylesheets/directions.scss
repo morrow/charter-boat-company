@@ -1,0 +1,55 @@
+// Place all the styles related to the directions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+main.directions {
+  img {
+    display:inline-block;
+    height:320px;
+    margin:0;
+  }
+}
+
+.marina {
+  padding:0.5em;
+  margin:1em auto;
+  text-align:center;
+  line-height:1.5em;
+  .name {
+    font-size:1.5em;
+    margin:0.2em;
+    font-weight:bold;
+  }
+  > a {
+    text-decoration:underline;
+    margin:0.2em;
+    letter-spacing:2px;
+  }
+}
+
+.directions-from-495E, .directions-from-orient-point {
+  font-size:0.8em;
+  margin:1em;
+  .title {
+    margin:0.1em;
+    font-weight:bold;
+    font-size:1.25em;
+  }
+}
+
+#google-maps {
+  color:transparent;
+  background:url(/google_maps_large.png);
+  background-size:cover;
+}
+
+a.button {
+  font-family: 'droid sans';
+  display:inline-block;
+  background:linear-gradient(to bottom, #eee, #ccc);
+  border:1px solid #bbb;
+  font-size:0.85em;
+  padding:0.1em 0.5em;
+  border-radius:3px;
+  margin:0 1em;
+}
