@@ -2,26 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 main.info {
-  font-size:1em;
   line-height:1.5em;
-  .jump-links {
-    margin-top:0;
-    margin-bottom:3em;
-    text-align:center;
+  .table-of-contents {
+    margin-top:1em;
+    font-size:0.6em;
+    li {
+      margin-left:2em;
+    }
     a {
       display:inline-block;
-      font-family:'droid sans';
-      padding:0.5em;
-      margin:1em;
-      background:#eee;
-      border:1px solid #ccc;
+      font-family:'bebas';
+      padding:0.25em 0.5em;
+      font-size:1.2em;
+      background:#111;
+      font-size:1.5em;
+      color:white;
       &:hover {
-        background:#eee;
+        background:#000;
+        color:#09f;
       }
     }
   }
   > div {
-    margin:2em 1em;
+    font-size:1em;
+    margin:1em 0;
     padding-top:2em;
   }
   ul, dl, p {
