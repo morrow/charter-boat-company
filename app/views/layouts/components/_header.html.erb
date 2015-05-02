@@ -1,6 +1,6 @@
 <header>
   <%= image_tag "/boat_logo_cropped.png", :class => :hero %>
-  <%= link_to "/", :class => :logo do %>
+  <%= link_to "/", :class => [:logo, ('current' if current_class?('home'))] do %>
     <h1>Sundowner Charters</h1>
   <% end %>
   <h2 id='tagline'>Sailing the Waters of Long Island's East End since 1982</h2>

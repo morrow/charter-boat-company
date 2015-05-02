@@ -13,7 +13,7 @@ main.rates {
     margin:0.5em 1em 0 0;
     display:block;
     float: left;
-    width: 300px;
+    width: 290px;
     padding: 6px;
     border: 1px solid #ccc;
     background: whiteSmoke;
@@ -28,19 +28,19 @@ main.rates {
     }
   }
   .rate-group {
-    padding:0.5em;
+    padding:0;
     //background:whiteSmoke;
     //border: 1px solid #ccc;
     margin-bottom:2em;
   }
   .rate {
-    padding:0.5em 0.75em;
-    font-size:0.9em;
+    padding:0.5em;
+    font-size:0.8em;
     font-family:'droid sans';
     display:block;
     margin:0.6em 0 0.25em 0;
     background:white;
-    border:1px solid #ccc;
+    border:1px solid #ddd;
     display:inline-block;
     .service, .price {
       display:inline-block;
@@ -56,14 +56,14 @@ main.rates {
       }
       .service-duration, .service-departure-time {
         color:#666;
-        font-size:0.8em;
+        font-size:0.75em;
       }
       .service-departure-time {
         //font-style:italic;
         &:after {
           content:'**';
           vertical-align:top;
-          font-size:0.7em;
+          font-size:0.75em;
           position:relative;
         }
       }
@@ -80,7 +80,6 @@ main.rates {
         display:inline-block;
         width:100px;
         text-align:right;
-        //font-weight:bold;
         color:rgb(60,200,60);
         margin-right:0.25em;
         &:before {
