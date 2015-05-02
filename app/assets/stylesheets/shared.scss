@@ -38,12 +38,11 @@ header {
     word-spacing:0.35em;
     font-weight:bold;
     display:inline-block;
-    text-shadow:2px 2px 0px #bbb;
+    text-shadow:1px 1px 0px #333;
     padding:0.2em 0.5em;
-    -webkit-transition:all 0.2s linear;
+    color:red;
     &:hover {
-      color:orangered;
-      text-shadow:2px 2px 0px #333;
+      color:#222;
     }
   }
   #tagline {
@@ -90,9 +89,9 @@ header {
         position:relative;
         left:-0.5em;
         padding-left:0.5em;
-        top:-0.2em;
+        top:-0.15em;
         font-size:0.8em;
-        opacity:0.85;
+        opacity:0.2;
       }
       &.current:before {
         color:white;

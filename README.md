@@ -6,4 +6,4 @@
 * Possible report publishing integration
 * Add recipes
 * Setup Admin access
- 
+* Contact form

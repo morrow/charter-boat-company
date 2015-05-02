@@ -6,7 +6,7 @@
   <h2 id='tagline'>Sailing the Waters of Long Island's East End since 1982</h2>
   <nav>
     <% %w(boats crew rates info directions contact).each do |link| %>
-      <%= link_to link, "/#{link}", :class => [link, ('current' if current_class?(link))] %>
+      <%= link_to link, "/#{link}", :class => [link, ('current' if current_class?(link))], :data => { 'keep-scroll' => true } %>
     <% end %>
     <%= link_to 'Book Your Trip', '/bookings', :class => 'book' %>
   </nav>
