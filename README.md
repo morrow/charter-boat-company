@@ -1,4 +1,6 @@
-# Sundowner Charters
+# Charter Boat Company
+
+Rails application for a charter boat company website.
 
 ## To-Do
 * Booking system
